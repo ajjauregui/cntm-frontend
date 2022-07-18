@@ -1,29 +1,25 @@
 <template>
-  <v-fade-transition mode="out-in">
+  <v-app>
+    <AppBar class="mb-15"/>
+    <v-container>
+      <v-fade-transition mode="out-in">
+    
     <router-view />
   </v-fade-transition>
 
+    </v-container>
+      
+  </v-app>
+    
 </template>
+<script>
+import AppBar from './components/AppNavbar.vue'
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  components: {
+    AppBar
+    
+  },
+  
+};
+</script>

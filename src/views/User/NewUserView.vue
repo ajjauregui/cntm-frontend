@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <h1>hola</h1>
+    <h1>hola New User</h1>
   </v-container> 
 </template>
 
 <script>
 // @ is an alias to /src
 export default {
-  name: 'HomeView',
+  name: 'NewUserView',
   components: {
     
     
